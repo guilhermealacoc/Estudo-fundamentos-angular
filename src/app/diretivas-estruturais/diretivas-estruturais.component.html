@@ -1,1 +1,28 @@
-<p>diretivas-estruturais works!</p>
+<p *ngIf="condition; else elseBlock">True</p>
+<ng-template #elseBlock>
+  <p>false</p>
+</ng-template>
+<hr>
+
+<p *ngIf="conditionClick">true</p>
+<p *ngIf="!conditionClick">false</p>
+<button (click)="onClick()">Clique</button>
+
+<hr>
+
+<ul>
+  <li *ngFor="let item of list; let i = index;" (click)="onClickEventList(i)">[{{i}}]{{item.nome}}</li>
+</ul>
+
+<button (click)="onClickAddList()">Adicionar</button>
+<hr>
+
+<div [ngSwitch]="'Guilherme'">
+  <p *ngSwitchCase="'Guilherme'">
+    Guilherme
+  </p>
+
+  <p *ngSwitchCase="'Alacoc'">
+    Alacoc
+  </p>
+</div>
