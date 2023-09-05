@@ -15,6 +15,7 @@ export class DiretivasEstruturaisComponent {
     { nome: 'Jose da Silva' },
     { nome: 'Pedro da Silva' },
   ];
+  public nome: String = 'Alacoc';
 
   constructor() {}
 
