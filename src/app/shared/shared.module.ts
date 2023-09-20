@@ -1,11 +1,13 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NewComponentComponent } from './new-component/new-component.component';
+import { NgModule } from '@angular/core';
+
 import { InputComponent } from './input/input.component';
+import { NewComponentComponent } from './new-component/new-component.component';
+import { OutputComponent } from './output/output.component';
 
 @NgModule({
-  declarations: [NewComponentComponent, InputComponent],
-  exports: [NewComponentComponent],
+  declarations: [NewComponentComponent, InputComponent, OutputComponent],
+  exports: [NewComponentComponent, InputComponent],
   imports: [CommonModule],
 })
 export class SharedModule {}
