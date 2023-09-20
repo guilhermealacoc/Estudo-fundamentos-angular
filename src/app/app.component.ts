@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
     <app-input [contador]="addValue"></app-input>
     <br />
     <button (click)="add()">Adicionar</button>
+    <br />
+    <app-output></app-output>
   `,
 })
 export class AppComponent implements OnInit {

@@ -7,7 +7,7 @@ import { OutputComponent } from './output/output.component';
 
 @NgModule({
   declarations: [NewComponentComponent, InputComponent, OutputComponent],
-  exports: [NewComponentComponent, InputComponent],
+  exports: [NewComponentComponent, InputComponent, OutputComponent],
   imports: [CommonModule],
 })
 export class SharedModule {}
