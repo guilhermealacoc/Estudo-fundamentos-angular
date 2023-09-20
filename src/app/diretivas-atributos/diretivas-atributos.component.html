@@ -1,3 +1,4 @@
+<ng-content></ng-content>
 <!--<p [ngClass]="{'active': valor, 'disabled': !valor}">Ng Class</p>
 <hr>
 <hr>
@@ -6,10 +7,12 @@
 <hr>
 <input [(ngModel)]="nome" type="text"> {{nome}}
 <button (click)="salvar()">Salvar</button>
-<li *ngFor="let item of list">{{item.nome}}</li> -->
+<li *ngFor="let item of list">{{item.nome}}</li>
 
 <ng-template ngFor let-item [ngForOf]="list">
   <p>
     {{item.nome}}
   </p>
-</ng-template>
+</ng-template>-->
+
+<ng-content></ng-content>
